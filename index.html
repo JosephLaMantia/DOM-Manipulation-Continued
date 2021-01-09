@@ -1,28 +1,33 @@
+  
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <title>Grid</title>
+    <link rel='stylesheet' href='stylesheet.css'>
 </head>
 <body>
+    <h1>Click buttons to modify grid!</h1>
 
-    <body>
-          <div class="grid-container">
-          <div class="grid-item">1</div>
-          <div class="grid-item">2</div>
-          <div class="grid-item">3</div>  
-          <div class="grid-item">4</div>
-          <div class="grid-item">5</div>
-          <div class="grid-item">6</div>  
-          <div class="grid-item">7</div>
-          <div class="grid-item">8</div>
-          <div class="grid-item">9</div>  
-        
-        
-        </body> 
+    <!-- Button that adds row to our table -->
+    <button onclick="addRow()">New Row</button>
+
+    <!-- Using table for our grid -->
+    <table id="grid">
+        <!-- tr = row of cells in table -->
+        <tr>
+            <!-- td = each cell in table -->
+            <td></td>
+        </tr>
+    </table>
+
+
+
+
     
-<script src="script.js"></script>
+
+    
+    <script src="script.js"></script>
 </body>
 </html>
