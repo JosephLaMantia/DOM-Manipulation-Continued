@@ -55,6 +55,6 @@ function removeCol(){
         numOfCols--;    //decrements number of cols for future reference.
     }
     else{                                                   //if no cols...
-        alert("You can't remove any more columns!");       //send alert
+        alert("You can't remove any more columns!");       //send alert.
     }
 }
