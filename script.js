@@ -17,3 +17,15 @@ function addRow(){
     numOfRows++;    //increments number of rows for future reference
 }
 
+// addCol: Allows user to add another column to our grid
+function addCol(){
+    let rows = document.querySelectorAll("tr"); //creates nodeList of current rows
+    let rowIndex = 0;
+
+    for(let i = 0; i < numOfRows; i++) {            //loops through the number of row nodes, 
+        let cell = document.createElement("td");    //creating a cell for each node
+        rows[rowIndex].appendChild(cell);           // and adding it to the grid
+        rowIndex++;
+    }
+    numOfCols++;    //increments number of cols for future reference.
+}
