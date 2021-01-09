@@ -29,3 +29,15 @@ function addCol(){
     }
     numOfCols++;    //increments number of cols for future reference.
 }
+
+// removeRow: Allows user to remove a Row from our grid
+function removeRow(){
+    if(numOfRows > 0){                                  //Checks if there are any rows... 
+        let grid = document.getElementById('grid');     //  if so, get grid
+        grid.lastElementChild.remove();                 //  and remove its last row (child)
+        numOfRows--;                                    //  then decrement number of rows, for future reference.
+    }
+    else{                                               //if no rows...
+        alert("You can't remove any more rows!");       //send alert
+    }
+}
