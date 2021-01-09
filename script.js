@@ -41,3 +41,20 @@ function removeRow(){
         alert("You can't remove any more rows!");       //send alert
     }
 }
+
+// removeCol: Allows user to remove a column from our grid, by removing the last cell from each row.
+function removeCol(){
+    if(numOfCols > 0){                                  //Checks if there are any Cols
+        let rows = document.querySelectorAll("tr");     //creates nodeList of current rows
+        let rowIndex = 0;
+    
+        for(let i = 0; i < numOfRows; i++) {           //loops through the number of row nodes, 
+            rows[rowIndex].lastElementChild.remove();  //removes last child from each row
+            rowIndex++;
+        }
+        numOfCols--;    //decrements number of cols for future reference.
+    }
+    else{                                                   //if no cols...
+        alert("You can't remove any more columns!");       //send alert
+    }
+}
