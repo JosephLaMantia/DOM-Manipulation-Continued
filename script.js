@@ -15,6 +15,10 @@ function addRow(){
     }
     grid.appendChild(newRow);   //adds the created row to our grid
     numOfRows++;    //increments number of rows for future reference
+    changeCellColor();
+    
+
+    
 }
 
 // addCol: Allows user to add another column to our grid
@@ -28,6 +32,7 @@ function addCol(){
         rowIndex++;
     }
     numOfCols++;    //increments number of cols for future reference.
+    changeCellColor();
 }
 
 // removeRow: Allows user to remove a Row from our grid
@@ -78,10 +83,31 @@ function myDropdown() {
     }
   }
 
+
+
+  let cellColor = "blue";
+
   function goldColor(){
-    document.body.style.backgroundColor = "gold";
+    cellColor = "gold";
   }
 
   function whiteColor(){
-    document.body.style.backgroundColor = "white";
+    cellColor = "white";
   }
+
+
+
+  function changeCellColor(){
+    $("*td").click(function() {
+      console.log($(this));
+      $(this).css("backgroundColor", cellColor);
+  });
+  }
+
+
+
+
+
+
+
+

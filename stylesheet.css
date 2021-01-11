@@ -1,5 +1,6 @@
 body {
     margin: 20% 20% 20% 20%;
+    background-color: gray;
 }
 
 h1 {
@@ -14,7 +15,7 @@ button{
 td {
     height: 20px;
     width: 20px;
-    background-color: gray;
+    background-color: blue;
 }
 
 /* Dropdown Button */
