@@ -85,8 +85,7 @@ function myDropdown() {
 
 
 
-  let cellColor = "blue";
-
+  let cellColor = "white";
   function goldColor(){
     cellColor = "gold";
   }
@@ -95,8 +94,6 @@ function myDropdown() {
     cellColor = "white";
   }
 
-
-
   function changeCellColor(){
     $("*td").click(function() {
       console.log($(this));
@@ -104,7 +101,18 @@ function myDropdown() {
   });
   }
 
-
+  console.log($('td'))
+   function fillUncoloredCells(){
+    $('*td').filter(function() {
+      let match = cellColor; // match background-color: black
+      /*
+          true = keep this element in our wrapped set
+          false = remove this element from our wrapped set
+                                                           */
+      return ( $(this).css('background-color') == match );
+  
+  }).css('background-color', cellColor); // change background color of all black spans
+   }
 
 
 
