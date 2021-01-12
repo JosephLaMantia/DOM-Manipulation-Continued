@@ -74,3 +74,11 @@ $(".fill-all-button").click(function (){
           $(this).addClass(c.value);
   })
 })
+
+//Allows user to clear all cells color
+$(".clear-colors").click(function (){
+  $('.row').children().each(function () {
+          $(this).css('background-color', "transparent");
+          $(this).addClass("transparent");
+  })
+})
