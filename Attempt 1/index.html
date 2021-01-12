@@ -16,8 +16,7 @@
         <button type="button" class="delete-col">Delete Column</button>
     </div>
 
-    <div class="color-container">
-        
+    <div class="cell-color-container">
         <text>Select from the following list and click on a box to change the color!</text>
         <form>
             <label for="colors">Choose a color:</label>
@@ -31,25 +30,39 @@
         </form>
     </div>
 
+    <div class="fill-container">
+        <text>Select a color and it will change all the unfilled boxes to the color.</text>
+        <form>
+            <label for="fill-cells">Choose a color:</label>
+            <select name="fill-cells" id="fill-cells">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="pink">Pink</option>
+            </select>
+        </form>
+        <button type="button" class="fill-button">Fill!</button>
+    </div>
+
 
 
     <div class="grid-container">
         <div class="row">
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
+            <div class="cell transparent"></div>
+            <div class="cell transparent"></div>
+            <div class="cell transparent"></div>
         </div>
 
         <div class="row">
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
+            <div class="cell transparent"></div>
+            <div class="cell transparent"></div>
+            <div class="cell transparent"></div>
         </div>
 
         <div class="row">
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
+            <div class="cell transparent"></div>
+            <div class="cell transparent"></div>
+            <div class="cell transparent"></div>
         </div>
     </div>
 

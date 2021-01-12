@@ -19,7 +19,7 @@ function addCol(){
   let rows = document.querySelectorAll("div.row");
   for(let i = 0; i < rows.length; i++){
       let newCell = document.createElement("div");
-      newCell.className = "cell";
+      newCell.className = "cell transparent";
       rows[i].appendChild(newCell);
   }
 }
@@ -51,4 +51,19 @@ $("div.cell").click(function () {
   console.log(this)
   let color = document.getElementById("colors");
   $(this).css("backgroundColor", color.value);
+  console.log($(this).addClass(color.value).removeClass('transparent'))
+})
+
+
+//Allows user to fill in any uncolored cells
+$(".fill-button").click(function (){
+  console.log("fill-all-white-boxes clicked")
+  let c = document.getElementById('fill-cells')
+  console.log(c)
+  $('.row').children().each(function () {
+      if ($(this).hasClass('transparent')) {
+          $(this).css('background-color', c.value)
+          console.log($(this).addClass(c.value).removeClass('transparent'))
+      }
+  })
 })

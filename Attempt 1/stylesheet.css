@@ -9,5 +9,9 @@ div.cell {
   border: 2px solid black;
   padding:5px;
   margin: 5px;
+}
+
+div.transparent {
   background-color: transparent;
+
 }
