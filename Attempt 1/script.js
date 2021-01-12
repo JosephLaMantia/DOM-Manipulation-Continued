@@ -82,3 +82,27 @@ $(".clear-colors").click(function (){
           $(this).addClass("transparent");
   })
 })
+
+//Allows user to clear all cells color
+$(".clear-colors").click(function (){
+  $('.row').children().each(function () {
+          $(this).css('background-color', "transparent");
+          $(this).addClass("transparent");
+  })
+})
+
+//Click down and drag to color
+$('.drag-and-fill-button').click(function () {
+  console.log("yes")
+  dragAndFill();
+})
+
+function dragAndFill(){
+  if ($(".cell").mousedown) {
+    $(".cell").mouseover(function (){
+      let c = document.getElementById('drag-and-fill')
+      $(this).css('background-color', c.value)
+    })
+  }
+}
+
