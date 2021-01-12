@@ -55,15 +55,22 @@ $("div.cell").click(function () {
 })
 
 
-//Allows user to fill in any uncolored cells
+//Allows user to fill in any uncolored cells with a color
 $(".fill-button").click(function (){
-  console.log("fill-all-white-boxes clicked")
   let c = document.getElementById('fill-cells')
-  console.log(c)
   $('.row').children().each(function () {
       if ($(this).hasClass('transparent')) {
           $(this).css('background-color', c.value)
           console.log($(this).addClass(c.value).removeClass('transparent'))
       }
+  })
+})
+
+//Allows user to fill in all cells with a color
+$(".fill-all-button").click(function (){
+  let c = document.getElementById('fill-all-cells')
+  $('.row').children().each(function () {
+          $(this).css('background-color', c.value);
+          $(this).addClass(c.value);
   })
 })
