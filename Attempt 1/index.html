@@ -1,0 +1,62 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel='stylesheet' href='stylesheet.css'>
+</head>
+<body>
+   
+    <div class="button-container">
+        <button type="button" class="add-row">Add Row</button>
+        <button type="button" class="delete-row">Delete Row</button>
+        <button type="button" class="add-col">Add Column</button>
+        <button type="button" class="delete-col">Delete Column</button>
+    </div>
+
+    <div class="color-container">
+        
+        <text>Select from the following list and click on a box to change the color!</text>
+        <form>
+            <label for="colors">Choose a color:</label>
+            <select name="colors" id="colors">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="pink">Pink</option>
+                <option value="white">White</option>
+            </select>
+        </form>
+    </div>
+
+
+
+    <div class="grid-container">
+        <div class="row">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+
+        <div class="row">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+
+        <div class="row">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+    </div>
+
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
